@@ -1,3 +1,9 @@
+# Run wasm example
+g++ -I. -Iinclude samples/run_wasm.cc -o run_wasm -lv8_monolith -Lout.gn/x64.release.sample/obj/ -pthread -std=c++0x
+
+./run_wasm samples/add.wasm 
+
+
 V8 JavaScript Engine
 =============
 
